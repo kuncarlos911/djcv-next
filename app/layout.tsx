@@ -13,9 +13,34 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Willy Homes | DJ & Darbuka | Barcelona",
+   metadataBase: new URL("https://www.djwillyhomes.com"),
+  title: "Willy Homes — DJ & Darbuka (Barcelona)",
   description:
-    "Willy Homes: Funk · Disco · House DJ in Barcelona + darbuka teacher. Bookings for clubs, private events and corporate events.",
+    "DJ (funk / disco / house) + darbuka workshops. Bookings for clubs, private events and corporate.",
+  openGraph: {
+    title: "Willy Homes — DJ & Darbuka (Barcelona)",
+    description:
+      "Funk • Disco • House DJ + Darbuka workshops. Bookings for events.",
+    url: "https://www.djwillyhomes.com",
+    siteName: "Willy Homes",
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Willy Homes — DJ & Darbuka",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Willy Homes — DJ & Darbuka (Barcelona)",
+    description:
+      "Funk • Disco • House DJ + Darbuka workshops. Bookings for events.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({
