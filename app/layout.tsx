@@ -1,4 +1,4 @@
-lo import type { Metadata } from "next";
+import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -13,11 +13,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Willy Homes — DJ & Percussionist in Barcelona",
+  title: "Willy Homes | DJ & Darbuka | Barcelona",
   description:
-    "Willy Homes is a DJ and percussionist based in Barcelona. Funk, disco and house DJ sets for clubs, private events and corporate bookings. Darbuka classes and workshops available.",
-};
-
+    "Willy Homes: Funk · Disco · House DJ in Barcelona + darbuka teacher. Bookings for clubs, private events and corporate events.",
 };
 
 export default function RootLayout({
@@ -26,10 +24,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="es">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
