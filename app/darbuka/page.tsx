@@ -43,6 +43,32 @@ export default function DarbukaPage() {
           Private darbuka lessons and group workshops inspired by Maghreb rhythms. We focus on sound, groove and feeling the rhythm in your hands — simple,
   practical and musical.
         </p>
+{/* Visual gallery */}
+<div className="mt-10 grid gap-6 md:grid-cols-3">
+  <div className="rounded-2xl overflow-hidden border">
+    <img
+      src="/darbuka/1.jpg"
+      alt="Darbuka rhythm notation"
+      className="h-full w-full object-cover"
+    />
+  </div>
+
+  <div className="rounded-2xl overflow-hidden border">
+    <img
+      src="/darbuka/2.jpg"
+      alt="Darbuka writing and rhythm patterns"
+      className="h-full w-full object-cover"
+    />
+  </div>
+
+  <div className="rounded-2xl overflow-hidden border">
+    <img
+      src="/darbuka/3.jpg"
+      alt="Darbuka workshop in Tarifa"
+      className="h-full w-full object-cover"
+    />
+  </div>
+</div>
 
         <div className="mt-8 flex flex-wrap gap-4">
           <a
