@@ -1,3 +1,5 @@
+import Link from "next/link";
+import Image from "next/image";
 import { Backpack, Globe, MapPin, Music2 } from "lucide-react";
 
 export default function DarbukaPage() {
@@ -16,8 +18,9 @@ export default function DarbukaPage() {
 
       {/* Rhythm dots pattern */}
       <svg
-        className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-[0.06]"
+        className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-[0.06] text-neutral-900"
         xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
       >
         <defs>
           <pattern id="rhythm" width="90" height="90" patternUnits="userSpaceOnUse">
@@ -34,30 +37,35 @@ export default function DarbukaPage() {
 
       <div className="mx-auto max-w-4xl">
         {/* HERO */}
-        <p className="text-sm uppercase tracking-widest opacity-60">
-          Darbuka · Barcelona
-        </p>
+        <p className="text-sm uppercase tracking-widest opacity-60">Darbuka · Barcelona</p>
 
         <h1 className="mt-4 text-5xl font-bold leading-tight">
           Darbuka classes & rhythm workshops
         </h1>
 
         <p className="mt-4 text-lg opacity-80">
-          Private lessons and group workshops inspired by Maghreb rhythms.
-          Technique, groove and musicality — simple, practical and fun.
+          Private lessons and group workshops inspired by Maghreb rhythms. Technique, groove and
+          musicality — simple, practical and fun.
+        </p>
+
+        <p className="mt-3 text-sm opacity-70">
+          Beginner-friendly. Darbuka classes in Barcelona — también opción online.
         </p>
 
         {/* STRUCTURE + PRICING */}
         <div className="mt-10 rounded-2xl border bg-white/60 p-6 backdrop-blur">
-          <p className="text-sm uppercase tracking-widest opacity-60">
-            Clases · Estructura
-          </p>
+          <p className="text-sm uppercase tracking-widest opacity-60">Clases · Estructura</p>
 
           <h2 className="mt-3 text-2xl font-bold">Niveles, duración y precios</h2>
 
           <p className="mt-3 opacity-80">
             Precios orientativos. Ajusto el plan según tu nivel y objetivo (técnica, groove,
-            repertorio).
+            repertorio). No hace falta experiencia previa.
+          </p>
+
+          <p className="mt-2 text-sm opacity-70">
+            Si no tienes darbuka, te indico opciones y a veces puedo prestar una (según
+            disponibilidad).
           </p>
 
           <div className="mt-6 grid gap-4 md:grid-cols-3">
@@ -121,19 +129,20 @@ export default function DarbukaPage() {
 
             <div className="mt-5 grid gap-6 sm:grid-cols-2">
               <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2">
+                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
                   <Backpack size={20} />
                 </div>
                 <div>
                   <p className="font-semibold">Qué traer</p>
                   <p className="text-sm opacity-80">
-                    Tu darbuka si tienes. Si no, te indico opciones (y préstamo según disponibilidad).
+                    Tu darbuka si tienes. Si no, te indico opciones (y préstamo según
+                    disponibilidad).
                   </p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2">
+                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
                   <Music2 size={20} />
                 </div>
                 <div>
@@ -145,19 +154,17 @@ export default function DarbukaPage() {
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2">
+                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
                   <Globe size={20} />
                 </div>
                 <div>
                   <p className="font-semibold">Idiomas</p>
-                  <p className="text-sm opacity-80">
-                    Español · English · Français
-                  </p>
+                  <p className="text-sm opacity-80">Español · English · Français</p>
                 </div>
               </div>
 
               <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2">
+                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
                   <MapPin size={20} />
                 </div>
                 <div>
@@ -177,45 +184,53 @@ export default function DarbukaPage() {
               target="_blank"
               rel="noreferrer"
               className="rounded-2xl border px-6 py-3 font-semibold bg-black text-white hover:opacity-90 transition"
+              aria-label="Reservar clase de darbuka (Calendly)"
             >
               Reservar clase
             </a>
 
-            <a
+            <Link
               href="/contact"
               className="rounded-2xl border px-6 py-3 font-semibold opacity-80 hover:opacity-100 transition"
             >
               Preguntar disponibilidad
-            </a>
+            </Link>
           </div>
+
+          <p className="mt-3 text-sm opacity-70">
+            Respondo rápido. Podemos elegir formato (privada, pack o grupo) según tu objetivo y
+            agenda.
+          </p>
         </div>
 
         {/* VISUAL GALLERY */}
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="overflow-hidden rounded-2xl border">
-            <img
+            <Image
               src="/darbuka/1.jpg"
               alt="Darbuka rhythm notation"
+              width={800}
+              height={800}
               className="h-full w-full object-cover"
             />
           </div>
 
           <div className="overflow-hidden rounded-2xl border">
             <video
-              src="/darbuka/clip.mp4"
-              className="h-full w-full object-cover"
-               autoPlay
-	      muted
-              loop
-              playsInline
-              controls
+              src="/darbuka/clip.mp4" 
+		className="h-full w-full object-cover" 
+		controls 
+		playsInline 
+		preload="metadata"
+		aria-label="Darbuka playing clip with audio"
             />
           </div>
-
           <div className="overflow-hidden rounded-2xl border">
-            <img
+            <Image
               src="/darbuka/3.jpg"
               alt="Darbuka workshop in Tarifa"
+              width={800}
+              height={800}
               className="h-full w-full object-cover"
             />
           </div>
@@ -223,12 +238,12 @@ export default function DarbukaPage() {
 
         {/* BACK */}
         <div className="mt-10">
-          <a
+          <Link
             href="/"
             className="rounded-2xl border px-6 py-3 font-semibold opacity-80 hover:opacity-100 transition inline-block"
           >
             Volver a Home
-          </a>
+          </Link>
         </div>
       </div>
     </main>
