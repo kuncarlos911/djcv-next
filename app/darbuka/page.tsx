@@ -201,10 +201,14 @@ export default function DarbukaPage() {
           </div>
 
           <div className="overflow-hidden rounded-2xl border">
-            <img
-              src="/darbuka/2.jpg"
-              alt="Darbuka writing and rhythm patterns"
+            <video
+              src="/darbuka/clip.mp4"
               className="h-full w-full object-cover"
+              autoplay
+	      muted
+              loop
+              playsinline
+              controls
             />
           </div>
 
