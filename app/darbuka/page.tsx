@@ -204,10 +204,10 @@ export default function DarbukaPage() {
             <video
               src="/darbuka/clip.mp4"
               className="h-full w-full object-cover"
-              autoplay
+               autoPlay
 	      muted
               loop
-              playsinline
+              playsInline
               controls
             />
           </div>
