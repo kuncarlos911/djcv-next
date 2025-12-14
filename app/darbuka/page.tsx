@@ -40,8 +40,8 @@ export default function DarbukaPage() {
         </h1>
 
         <p className="mt-4 text-lg opacity-80">
-          Private lessons and group workshops inspired by Maghreb rhythms. Focus on
-          technique, groove and musicality.
+          Private darbuka lessons and group workshops inspired by Maghreb rhythms. We focus on sound, groove and feeling the rhythm in your hands — simple,
+  practical and musical.
         </p>
 
         <div className="mt-8 flex flex-wrap gap-4">
@@ -49,7 +49,7 @@ export default function DarbukaPage() {
             href="/contact"
             className="rounded-2xl border px-6 py-3 font-semibold bg-black text-white hover:opacity-90 transition"
           >
-            Ask for availability
+            Ask for darbuka availability
           </a>
 
           <a
