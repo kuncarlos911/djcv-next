@@ -38,6 +38,10 @@ export default function DjPage() {
         <p className="text-sm uppercase tracking-widest opacity-60">DJ · Barcelona</p>
 
         <h1 className="mt-4 text-5xl font-bold leading-tight">DJ sets & mixes</h1>
+        <p className="mt-3 text-sm opacity-70">
+          DJ in Barcelona for private events, cocktail bars and cultural venues.
+          Long-form DJ sets focused on funk, disco and house.
+        </p>
 
         <p className="mt-4 text-lg opacity-80">
           Groove-driven sets — jazz, funk, disco and house. Focused on flow, warmth and
