@@ -45,7 +45,7 @@ export default function Home() {
       <div className="mx-auto max-w-4xl">
         {/* HERO */}
         <p className="text-sm uppercase tracking-widest opacity-60">
-          DJ · Darbuka · Barcelona
+          DJ · Music Author · Darbuka · Barcelona
         </p>
 
         <div className="mt-6 grid gap-8 md:grid-cols-[1fr_280px] md:items-start">
@@ -54,8 +54,8 @@ export default function Home() {
             <h1 className="text-5xl font-bold leading-tight">Willy Homes</h1>
 
             <p className="mt-4 text-lg opacity-80">
-              Funk · Disco · House DJ for clubs, private events and corporate bookings.
-              Darbuka workshops and rhythm experiences.
+              Funk · Disco · House DJ, author of The Makings of Willy Homes,
+              and darbuka performer offering workshops and rhythm experiences
             </p>
 
             {/* CTA BUTTONS (ligeros) */}
