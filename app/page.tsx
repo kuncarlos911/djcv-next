@@ -79,7 +79,7 @@ export default function Home() {
                 href="/book"
                 className="rounded-2xl border px-6 py-3 font-semibold opacity-80 transition hover:opacity-100"
               >
-                Book
+                My Book
               </Link>
               
               {/* Contact */}
