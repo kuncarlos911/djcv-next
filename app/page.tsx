@@ -127,7 +127,18 @@ export default function Home() {
               >
                 Darbuka page
               </Link>
+
               <span className="opacity-40">·</span>
+
+              <Link
+                className="underline underline-offset-4 opacity-80 hover:opacity-100"
+                href="/book"
+              >
+                My Book
+              </Link>
+
+              <span className="opacity-40">·</span>
+
               <Link
                 className="underline underline-offset-4 opacity-80 hover:opacity-100"
                 href="/contact"
