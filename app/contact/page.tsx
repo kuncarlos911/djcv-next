@@ -54,7 +54,7 @@ export default function ContactPage() {
 
         <div className="mt-6">
           <a href="/" className="opacity-70 underline">
-            ← Back to home
+            ← Back to Homes
           </a>
         </div>
       </div>
