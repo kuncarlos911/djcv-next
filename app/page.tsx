@@ -105,13 +105,13 @@ export default function Home() {
 
           {/* Right: image card */}
           <div className="rounded-2xl border bg-white/40 p-4 backdrop-blur">
-            <Image
-              src="/og.png"
-              alt="Willy Homes — DJ & Darbuka"
-              width={1200}
-              height={630}
-              className="h-auto w-full rounded-xl"
-              priority
+         <Image
+          src="/willy-darbuka-dj.png"
+          alt="Willy Homes playing darbuka and DJing"
+          width={1200}
+          height={1200}
+          className="h-auto w-full rounded-xl"
+          priority
             />
             <p className="mt-3 text-sm opacity-70">DJ sets + darbuka workshops.</p>
 
