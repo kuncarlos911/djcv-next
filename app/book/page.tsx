@@ -1,10 +1,91 @@
+
 import Image from "next/image";
 import Link from "next/link";
 
 export default function BookPage() {
   return (
-    <main className="min-h-screen px-6 py-16">
-      <div className="mx-auto max-w-5xl">
+    <main className="relative min-h-screen overflow-hidden px-6 py-16">
+
+      {/* BACKGROUND GRADIENT */}
+      <div className="pointer-events-none absolute inset-0 -z-10">
+        <div
+          className="absolute -top-32 left-1/2 h-[500px] w-[900px] -translate-x-1/2 rounded-full blur-3xl opacity-25"
+          style={{
+            background:
+              "radial-gradient(circle at 30% 30%, #fbbf24 0%, transparent 60%), radial-gradient(circle at 70% 40%, #60a5fa 0%, transparent 55%)",
+          }}
+        />
+      </div>
+
+      {/* MUSICAL BACKGROUND PATTERN */}
+      <svg
+        className="pointer-events-none absolute inset-0 -z-10 h-full w-full text-neutral-900 opacity-[0.045]"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+      >
+        <defs>
+          <pattern
+            id="musical-pattern"
+            width="180"
+            height="180"
+            patternUnits="userSpaceOnUse"
+          >
+            {/* Vinyl grooves */}
+            <circle
+              cx="45"
+              cy="45"
+              r="25"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+            />
+            <circle
+              cx="45"
+              cy="45"
+              r="18"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1"
+            />
+            <circle
+              cx="45"
+              cy="45"
+              r="5"
+              fill="currentColor"
+            />
+
+            {/* Sound waves */}
+            <path
+              d="M90 45 C110 20, 130 20, 150 45 S170 70, 190 45"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
+
+            <path
+              d="M-10 125 C10 100, 30 100, 50 125 S90 150, 110 125"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
+
+            {/* Musical notes */}
+            <path
+              d="M130 100 V125 Q130 135 120 132 Q110 129 118 122 Q122 118 130 121"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+            />
+
+            <circle cx="15" cy="155" r="2" fill="currentColor" />
+            <circle cx="165" cy="155" r="2" fill="currentColor" />
+          </pattern>
+        </defs>
+
+        <rect width="100%" height="100%" fill="url(#musical-pattern)" />
+      </svg>
+
+      <div className="relative mx-auto max-w-5xl">
 
         {/* INTRO */}
         <p className="text-sm uppercase tracking-widest opacity-60">
@@ -36,7 +117,7 @@ export default function BookPage() {
               A musical journey through life, memories and discovery.
             </p>
 
-            <p className="mt-6 leading-relaxed opacity-70">
+            <p className="mt-6 leading-relaxed opacity-75">
               From Belgium to Andalucía, and eventually Barcelona,
               this is the story of a life shaped by music.
               A journey through different cultures, musical scenes,
@@ -44,7 +125,7 @@ export default function BookPage() {
               an identity.
             </p>
 
-            <p className="mt-4 leading-relaxed opacity-70">
+            <p className="mt-4 leading-relaxed opacity-75">
               More than a DJ biography, this book is a personal
               journey through the music, people and experiences
               that made Willy Homes.
@@ -53,7 +134,10 @@ export default function BookPage() {
         </div>
 
         {/* THE STORY */}
-        <section id="story" className="mt-24 border-t pt-12">
+        <section
+          id="story"
+          className="mt-24 rounded-2xl border bg-white/40 p-8 backdrop-blur"
+        >
           <p className="text-sm uppercase tracking-widest opacity-60">
             The story
           </p>
@@ -73,7 +157,7 @@ export default function BookPage() {
         {/* SOUNDTRACK */}
         <section
           id="soundtrack"
-          className="mt-20 rounded-2xl border bg-white/30 p-8 backdrop-blur"
+          className="mt-12 rounded-2xl border bg-white/50 p-8 backdrop-blur"
         >
           <p className="text-sm uppercase tracking-widest opacity-60">
             The soundtrack
@@ -104,7 +188,7 @@ export default function BookPage() {
         </section>
 
         {/* MUSICAL MAP */}
-        <section className="mt-12 rounded-2xl border p-8">
+        <section className="mt-12 rounded-2xl border bg-white/50 p-8 backdrop-blur">
           <p className="text-sm uppercase tracking-widest opacity-60">
             Explore
           </p>
@@ -130,7 +214,7 @@ export default function BookPage() {
         </section>
 
         {/* GET THE BOOK */}
-        <section className="mt-20 border-t pt-12 text-center">
+        <section className="mt-20 rounded-2xl border bg-white/40 p-8 text-center backdrop-blur">
           <h2 className="text-3xl font-bold">
             Get the book
           </h2>
@@ -145,7 +229,7 @@ export default function BookPage() {
         </section>
 
         {/* BACK HOME */}
-        <div className="mt-16 border-t pt-8">
+        <div className="mt-16 border-t border-black/10 pt-8">
           <Link
             href="/"
             className="text-sm underline underline-offset-4 opacity-70 hover:opacity-100"
