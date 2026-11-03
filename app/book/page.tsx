@@ -115,12 +115,18 @@ export default function BookPage() {
 
           <p className="mt-4 max-w-2xl leading-relaxed opacity-75">
             Explore the musical influences, places and discoveries
-            behind the story.
+            behind the story. A collection of videos, playlists,
+            artists, record labels, festivals and inspirations.
           </p>
 
-          <p className="mt-6 text-sm opacity-60">
-            Musical Map coming soon.
-          </p>
+          <div className="mt-6">
+            <Link
+              href="/book/musical-map"
+              className="inline-block rounded-2xl border bg-black px-6 py-3 font-semibold text-white transition hover:opacity-90"
+            >
+              Explore the Musical Map →
+            </Link>
+          </div>
         </section>
 
         {/* GET THE BOOK */}
