@@ -236,14 +236,10 @@ export default function DarbukaPage() {
           </div>
         </div>
 
-        {/* BACK */}
-        <div className="mt-10">
-          <Link
-            href="/"
-            className="rounded-2xl border px-6 py-3 font-semibold opacity-80 hover:opacity-100 transition inline-block"
-          >
-            Volver a Home
-          </Link>
+       <div className="mt-6">
+          <a href="/" className="opacity-70 underline">
+            ← Back to Homes
+          </a>
         </div>
       </div>
     </main>
