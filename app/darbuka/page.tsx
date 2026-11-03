@@ -207,7 +207,7 @@ export default function DarbukaPage() {
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           <div className="overflow-hidden rounded-2xl border">
             <Image
-              src="/darbuka/1.jpg"
+              src="/darbuka/1.png"
               alt="Darbuka rhythm notation"
               width={800}
               height={800}
