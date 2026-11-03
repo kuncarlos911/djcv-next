@@ -49,22 +49,6 @@ export default function BookPage() {
               journey through the music, people and experiences
               that made Willy Homes.
             </p>
-
-            <div className="mt-8 flex flex-wrap gap-4">
-              <a
-                href="#soundtrack"
-                className="rounded-2xl border bg-black px-6 py-3 font-semibold text-white transition hover:opacity-90"
-              >
-                Discover the soundtrack
-              </a>
-
-              <a
-                href="#story"
-                className="rounded-2xl border px-6 py-3 font-semibold transition hover:bg-black/5"
-              >
-                About the book
-              </a>
-            </div>
           </div>
         </div>
 
@@ -87,7 +71,10 @@ export default function BookPage() {
         </section>
 
         {/* SOUNDTRACK */}
-        <section id="soundtrack" className="mt-20 rounded-2xl border bg-white/30 p-8 backdrop-blur">
+        <section
+          id="soundtrack"
+          className="mt-20 rounded-2xl border bg-white/30 p-8 backdrop-blur"
+        >
           <p className="text-sm uppercase tracking-widest opacity-60">
             The soundtrack
           </p>
@@ -102,9 +89,18 @@ export default function BookPage() {
             and memories throughout the book.
           </p>
 
-          <p className="mt-6 text-sm opacity-60">
-            Spotify playlist coming soon.
-          </p>
+          {/* SPOTIFY PLAYER */}
+          <div className="mt-8 overflow-hidden rounded-xl">
+            <iframe
+              title="The Makings of Willy Homes Spotify playlist"
+              src="https://open.spotify.com/embed/playlist/0AW8BZWMwQrVoNKxtzM9bG?utm_source=generator"
+              width="100%"
+              height="352"
+              style={{ borderRadius: "12px" }}
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+              loading="lazy"
+            />
+          </div>
         </section>
 
         {/* MUSICAL MAP */}
@@ -148,7 +144,7 @@ export default function BookPage() {
             href="/"
             className="text-sm underline underline-offset-4 opacity-70 hover:opacity-100"
           >
-            ← Back to Homes
+            ← Back to Willy Homes
           </Link>
         </div>
 
