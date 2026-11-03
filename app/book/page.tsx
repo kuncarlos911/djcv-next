@@ -150,7 +150,7 @@ export default function BookPage() {
             href="/"
             className="text-sm underline underline-offset-4 opacity-70 hover:opacity-100"
           >
-            ← Back to Willy Homes
+            ← Back to Homes
           </Link>
         </div>
 
