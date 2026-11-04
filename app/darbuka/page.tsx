@@ -1,14 +1,16 @@
+
 import Link from "next/link";
 import Image from "next/image";
 import { Backpack, Globe, MapPin, Music2 } from "lucide-react";
 
 export default function DarbukaPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden px-6 py-16">
-      {/* Soft background */}
+    <main className="relative min-h-screen overflow-hidden px-4 py-10 sm:px-6 sm:py-16">
+
+      {/* SOFT BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div
-          className="absolute -top-32 left-1/2 h-[420px] w-[820px] -translate-x-1/2 rounded-full blur-3xl opacity-30"
+          className="absolute -top-32 left-1/2 h-[420px] w-[820px] max-w-full -translate-x-1/2 rounded-full blur-3xl opacity-30"
           style={{
             background:
               "radial-gradient(circle at 30% 30%, #f59e0b 0%, transparent 60%), radial-gradient(circle at 70% 60%, #60a5fa 0%, transparent 55%)",
@@ -16,14 +18,19 @@ export default function DarbukaPage() {
         />
       </div>
 
-      {/* Rhythm dots pattern */}
+      {/* RHYTHM DOTS PATTERN */}
       <svg
         className="pointer-events-none absolute inset-0 -z-10 h-full w-full opacity-[0.06] text-neutral-900"
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
         <defs>
-          <pattern id="rhythm" width="90" height="90" patternUnits="userSpaceOnUse">
+          <pattern
+            id="rhythm"
+            width="90"
+            height="90"
+            patternUnits="userSpaceOnUse"
+          >
             <circle cx="14" cy="18" r="2.5" fill="currentColor" />
             <circle cx="44" cy="26" r="2" fill="currentColor" />
             <circle cx="70" cy="18" r="2.5" fill="currentColor" />
@@ -35,155 +42,199 @@ export default function DarbukaPage() {
         <rect width="100%" height="100%" fill="url(#rhythm)" />
       </svg>
 
-      <div className="mx-auto max-w-4xl">
-        {/* HERO */}
-        <p className="text-sm uppercase tracking-widest opacity-60">Darbuka · Barcelona</p>
+      <div className="mx-auto w-full max-w-4xl min-w-0">
 
-        <h1 className="mt-4 text-5xl font-bold leading-tight">
+        {/* HERO */}
+        <p className="text-xs sm:text-sm uppercase tracking-widest opacity-60">
+          Darbuka · Barcelona
+        </p>
+
+        <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-5xl">
           Darbuka classes & rhythm workshops
         </h1>
 
-        <p className="mt-4 text-lg opacity-80">
-          Private lessons and group workshops inspired by Maghreb rhythms. Technique, groove and
-          musicality — simple, practical and fun.
+        <p className="mt-4 text-base leading-relaxed opacity-80 sm:text-lg">
+          Private lessons and group workshops inspired by Maghreb rhythms.
+          Technique, groove and musicality — simple, practical and fun.
         </p>
 
-        <p className="mt-3 text-sm opacity-70">
+        <p className="mt-3 text-sm leading-relaxed opacity-70">
           Beginner-friendly. Darbuka classes in Barcelona — también opción online.
         </p>
 
         {/* STRUCTURE + PRICING */}
-        <div className="mt-10 rounded-2xl border bg-white/60 p-6 backdrop-blur">
-          <p className="text-sm uppercase tracking-widest opacity-60">Clases · Estructura</p>
+        <section className="mt-8 sm:mt-10 rounded-2xl border bg-white/60 p-4 backdrop-blur sm:p-6">
 
-          <h2 className="mt-3 text-2xl font-bold">Niveles, duración y precios</h2>
-
-          <p className="mt-3 opacity-80">
-            Precios orientativos. Ajusto el plan según tu nivel y objetivo (técnica, groove,
-            repertorio). No hace falta experiencia previa.
+          <p className="text-xs sm:text-sm uppercase tracking-widest opacity-60">
+            Clases · Estructura
           </p>
 
-          <p className="mt-2 text-sm opacity-70">
-            Si no tienes darbuka, te indico opciones y a veces puedo prestar una (según
-            disponibilidad).
+          <h2 className="mt-3 text-xl font-bold sm:text-2xl">
+            Niveles, duración y precios
+          </h2>
+
+          <p className="mt-3 text-sm leading-relaxed opacity-80 sm:text-base">
+            Precios orientativos. Ajusto el plan según tu nivel y objetivo
+            (técnica, groove, repertorio). No hace falta experiencia previa.
           </p>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border bg-white/70 p-5">
-              <p className="font-semibold">Nivel 1 · Beginner</p>
-              <ul className="mt-3 space-y-2 opacity-80">
+          <p className="mt-2 text-sm leading-relaxed opacity-70">
+            Si no tienes darbuka, te indico opciones y a veces puedo prestar
+            una (según disponibilidad).
+          </p>
+
+          {/* LEVELS */}
+          <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
+
+            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
+              <p className="font-semibold">
+                Nivel 1 · Beginner
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed opacity-80 sm:text-base">
                 <li>• Sonido (dum/tek/ka) + postura</li>
                 <li>• Patrones básicos y tempo</li>
                 <li>• Ejercicios claros para casa</li>
               </ul>
             </div>
 
-            <div className="rounded-2xl border bg-white/70 p-5">
-              <p className="font-semibold">Nivel 2 · Intermedio</p>
-              <ul className="mt-3 space-y-2 opacity-80">
+            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
+              <p className="font-semibold">
+                Nivel 2 · Intermedio
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed opacity-80 sm:text-base">
                 <li>• Variaciones + fills</li>
                 <li>• Acentos e independencia</li>
                 <li>• Ritmos Maghreb / fusión</li>
               </ul>
             </div>
 
-            <div className="rounded-2xl border bg-white/70 p-5">
-              <p className="font-semibold">Nivel 3 · Avanzado</p>
-              <ul className="mt-3 space-y-2 opacity-80">
+            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
+              <p className="font-semibold">
+                Nivel 3 · Avanzado
+              </p>
+              <ul className="mt-3 space-y-2 text-sm leading-relaxed opacity-80 sm:text-base">
                 <li>• Velocidad + control</li>
                 <li>• Repertorio + improvisación</li>
                 <li>• Preparación para show/estudio</li>
               </ul>
             </div>
+
           </div>
 
-          <div className="mt-6 grid gap-4 md:grid-cols-3">
-            <div className="rounded-2xl border bg-white/70 p-5">
-              <p className="font-semibold">Clases privadas</p>
-              <p className="mt-2 opacity-80">60 min · 1 persona</p>
-              <p className="mt-2 opacity-80">
+          {/* PRICING */}
+          <h3 className="mt-8 text-xl font-bold sm:text-2xl">
+            Precios
+          </h3>
+
+          <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
+
+            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
+              <p className="font-semibold">
+                Clases privadas
+              </p>
+              <p className="mt-2 text-sm opacity-80 sm:text-base">
+                60 min · 1 persona
+              </p>
+              <p className="mt-2 text-sm opacity-80 sm:text-base">
                 Desde <span className="font-semibold">35–50€</span>
               </p>
             </div>
 
-            <div className="rounded-2xl border bg-white/70 p-5">
-              <p className="font-semibold">Pack (recomendado)</p>
-              <p className="mt-2 opacity-80">4×60 min</p>
-              <p className="mt-2 opacity-80">
+            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
+              <p className="font-semibold">
+                Pack (recomendado)
+              </p>
+              <p className="mt-2 text-sm opacity-80 sm:text-base">
+                4×60 min
+              </p>
+              <p className="mt-2 text-sm opacity-80 sm:text-base">
                 Desde <span className="font-semibold">120–180€</span>
               </p>
             </div>
 
-            <div className="rounded-2xl border bg-white/70 p-5">
-              <p className="font-semibold">Workshops grupo</p>
-              <p className="mt-2 opacity-80">2–3h · 4–12 personas</p>
-              <p className="mt-2 opacity-80">
+            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
+              <p className="font-semibold">
+                Workshops grupo
+              </p>
+              <p className="mt-2 text-sm opacity-80 sm:text-base">
+                2–3h · 4–12 personas
+              </p>
+              <p className="mt-2 text-sm opacity-80 sm:text-base">
                 Desde <span className="font-semibold">150–350€</span>
               </p>
             </div>
+
           </div>
 
-          {/* Practical info */}
-          <div className="mt-6 rounded-2xl border bg-white/70 p-6">
-            <h3 className="text-lg font-bold">Info práctica</h3>
+          {/* PRACTICAL INFO */}
+          <div className="mt-6 rounded-2xl border bg-white/70 p-4 sm:p-6">
 
-            <div className="mt-5 grid gap-6 sm:grid-cols-2">
-              <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
+            <h3 className="text-lg font-bold">
+              Info práctica
+            </h3>
+
+            <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
+
+              <div className="flex min-w-0 items-start gap-3">
+                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
                   <Backpack size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold">Qué traer</p>
-                  <p className="text-sm opacity-80">
-                    Tu darbuka si tienes. Si no, te indico opciones (y préstamo según
-                    disponibilidad).
+                  <p className="mt-1 text-sm leading-relaxed opacity-80">
+                    Tu darbuka si tienes. Si no, te indico opciones
+                    (y préstamo según disponibilidad).
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
+              <div className="flex min-w-0 items-start gap-3">
+                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
                   <Music2 size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold">Instrumento</p>
-                  <p className="text-sm opacity-80">
+                  <p className="mt-1 text-sm leading-relaxed opacity-80">
                     Darbuka / doumbek. Técnica precisa + musicalidad.
                   </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
+              <div className="flex min-w-0 items-start gap-3">
+                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
                   <Globe size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold">Idiomas</p>
-                  <p className="text-sm opacity-80">Español · English · Français</p>
+                  <p className="mt-1 text-sm leading-relaxed opacity-80">
+                    Español · English · Français
+                  </p>
                 </div>
               </div>
 
-              <div className="flex items-start gap-3">
-                <div className="rounded-full bg-black/5 p-2" aria-hidden="true">
+              <div className="flex min-w-0 items-start gap-3">
+                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
                   <MapPin size={20} />
                 </div>
-                <div>
+                <div className="min-w-0">
                   <p className="font-semibold">Ubicación</p>
-                  <p className="text-sm opacity-80">
+                  <p className="mt-1 text-sm leading-relaxed opacity-80">
                     Barcelona (presencial). Online posible.
                   </p>
                 </div>
               </div>
+
             </div>
           </div>
 
-          {/* Darbuka CTA (separado del DJ) */}
-          <div className="mt-6 flex flex-wrap gap-4">
+          {/* CTA BUTTONS */}
+          <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-4">
+
             <a
               href="https://calendly.com/kuncarlos"
               target="_blank"
               rel="noreferrer"
-              className="rounded-2xl border px-6 py-3 font-semibold bg-black text-white hover:opacity-90 transition"
+              className="w-full rounded-2xl border bg-black px-6 py-3 text-center font-semibold text-white transition hover:opacity-90 sm:w-auto"
               aria-label="Reservar clase de darbuka (Calendly)"
             >
               Reservar clase
@@ -191,21 +242,24 @@ export default function DarbukaPage() {
 
             <Link
               href="/contact"
-              className="rounded-2xl border px-6 py-3 font-semibold opacity-80 hover:opacity-100 transition"
+              className="w-full rounded-2xl border px-6 py-3 text-center font-semibold opacity-80 transition hover:opacity-100 sm:w-auto"
             >
               Preguntar disponibilidad
             </Link>
+
           </div>
 
-          <p className="mt-3 text-sm opacity-70">
-            Respondo rápido. Podemos elegir formato (privada, pack o grupo) según tu objetivo y
-            agenda.
+          <p className="mt-3 text-sm leading-relaxed opacity-70">
+            Respondo rápido. Podemos elegir formato (privada, pack o grupo)
+            según tu objetivo y agenda.
           </p>
-        </div>
+
+        </section>
 
         {/* VISUAL GALLERY */}
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <div className="overflow-hidden rounded-2xl border">
+        <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 md:mt-10 md:grid-cols-3">
+
+          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border">
             <Image
               src="/darbuka/1.png"
               alt="Darbuka rhythm notation"
@@ -215,17 +269,18 @@ export default function DarbukaPage() {
             />
           </div>
 
-          <div className="overflow-hidden rounded-2xl border">
+          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border">
             <video
-              src="/darbuka/clip.mp4" 
-		className="h-full w-full object-cover" 
-		controls 
-		playsInline 
-		preload="metadata"
-		aria-label="Darbuka playing clip with audio"
+              src="/darbuka/clip.mp4"
+              className="h-full w-full object-cover"
+              controls
+              playsInline
+              preload="metadata"
+              aria-label="Darbuka playing clip with audio"
             />
           </div>
-          <div className="overflow-hidden rounded-2xl border">
+
+          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border">
             <Image
               src="/darbuka/3.jpg"
               alt="Darbuka workshop in Tarifa"
@@ -234,13 +289,16 @@ export default function DarbukaPage() {
               className="h-full w-full object-cover"
             />
           </div>
+
         </div>
 
-       <div className="mt-6">
-          <a href="/" className="opacity-70 underline">
+        {/* BACK HOME */}
+        <div className="mt-6">
+          <Link href="/" className="text-sm opacity-70 underline">
             ← Back to Homes
-          </a>
+          </Link>
         </div>
+
       </div>
     </main>
   );
