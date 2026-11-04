@@ -1,11 +1,10 @@
-
 import Link from "next/link";
 import Image from "next/image";
 import { Backpack, Globe, MapPin, Music2 } from "lucide-react";
 
 export default function DarbukaPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden px-4 py-10 sm:px-6 sm:py-16">
+    <main className="relative min-h-screen overflow-hidden bg-white px-4 py-10 sm:px-6 sm:py-16">
 
       {/* SOFT BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 -z-10">
@@ -45,7 +44,7 @@ export default function DarbukaPage() {
       <div className="mx-auto w-full max-w-4xl min-w-0">
 
         {/* HERO */}
-        <p className="text-xs sm:text-sm uppercase tracking-widest opacity-60">
+        <p className="text-xs uppercase tracking-widest opacity-60 sm:text-sm">
           Darbuka · Barcelona
         </p>
 
@@ -63,9 +62,9 @@ export default function DarbukaPage() {
         </p>
 
         {/* STRUCTURE + PRICING */}
-        <section className="mt-8 sm:mt-10 rounded-2xl border bg-white/60 p-4 backdrop-blur sm:p-6">
+        <section className="mt-8 rounded-2xl border border-neutral-300 bg-white p-4 sm:mt-10 sm:p-6">
 
-          <p className="text-xs sm:text-sm uppercase tracking-widest opacity-60">
+          <p className="text-xs uppercase tracking-widest opacity-60 sm:text-sm">
             Clases · Estructura
           </p>
 
@@ -86,10 +85,8 @@ export default function DarbukaPage() {
           {/* LEVELS */}
           <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
 
-            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
-              <p className="font-semibold">
-                Nivel 1 · Beginner
-              </p>
+            <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-5">
+              <p className="font-semibold">Nivel 1 · Beginner</p>
               <ul className="mt-3 space-y-2 text-sm leading-relaxed opacity-80 sm:text-base">
                 <li>• Sonido (dum/tek/ka) + postura</li>
                 <li>• Patrones básicos y tempo</li>
@@ -97,10 +94,8 @@ export default function DarbukaPage() {
               </ul>
             </div>
 
-            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
-              <p className="font-semibold">
-                Nivel 2 · Intermedio
-              </p>
+            <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-5">
+              <p className="font-semibold">Nivel 2 · Intermedio</p>
               <ul className="mt-3 space-y-2 text-sm leading-relaxed opacity-80 sm:text-base">
                 <li>• Variaciones + fills</li>
                 <li>• Acentos e independencia</li>
@@ -108,10 +103,8 @@ export default function DarbukaPage() {
               </ul>
             </div>
 
-            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
-              <p className="font-semibold">
-                Nivel 3 · Avanzado
-              </p>
+            <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-5">
+              <p className="font-semibold">Nivel 3 · Avanzado</p>
               <ul className="mt-3 space-y-2 text-sm leading-relaxed opacity-80 sm:text-base">
                 <li>• Velocidad + control</li>
                 <li>• Repertorio + improvisación</li>
@@ -128,10 +121,8 @@ export default function DarbukaPage() {
 
           <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
 
-            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
-              <p className="font-semibold">
-                Clases privadas
-              </p>
+            <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-5">
+              <p className="font-semibold">Clases privadas</p>
               <p className="mt-2 text-sm opacity-80 sm:text-base">
                 60 min · 1 persona
               </p>
@@ -140,10 +131,8 @@ export default function DarbukaPage() {
               </p>
             </div>
 
-            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
-              <p className="font-semibold">
-                Pack (recomendado)
-              </p>
+            <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-5">
+              <p className="font-semibold">Pack (recomendado)</p>
               <p className="mt-2 text-sm opacity-80 sm:text-base">
                 4×60 min
               </p>
@@ -152,10 +141,8 @@ export default function DarbukaPage() {
               </p>
             </div>
 
-            <div className="min-w-0 rounded-2xl border bg-white/70 p-4 sm:p-5">
-              <p className="font-semibold">
-                Workshops grupo
-              </p>
+            <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-5">
+              <p className="font-semibold">Workshops grupo</p>
               <p className="mt-2 text-sm opacity-80 sm:text-base">
                 2–3h · 4–12 personas
               </p>
@@ -167,7 +154,7 @@ export default function DarbukaPage() {
           </div>
 
           {/* PRACTICAL INFO */}
-          <div className="mt-6 rounded-2xl border bg-white/70 p-4 sm:p-6">
+          <div className="mt-6 rounded-2xl border border-neutral-300 bg-white p-4 sm:p-6">
 
             <h3 className="text-lg font-bold">
               Info práctica
@@ -176,7 +163,7 @@ export default function DarbukaPage() {
             <div className="mt-5 grid grid-cols-1 gap-5 sm:grid-cols-2">
 
               <div className="flex min-w-0 items-start gap-3">
-                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
+                <div className="shrink-0 rounded-full bg-neutral-100 p-2" aria-hidden="true">
                   <Backpack size={20} />
                 </div>
                 <div className="min-w-0">
@@ -189,7 +176,7 @@ export default function DarbukaPage() {
               </div>
 
               <div className="flex min-w-0 items-start gap-3">
-                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
+                <div className="shrink-0 rounded-full bg-neutral-100 p-2" aria-hidden="true">
                   <Music2 size={20} />
                 </div>
                 <div className="min-w-0">
@@ -201,7 +188,7 @@ export default function DarbukaPage() {
               </div>
 
               <div className="flex min-w-0 items-start gap-3">
-                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
+                <div className="shrink-0 rounded-full bg-neutral-100 p-2" aria-hidden="true">
                   <Globe size={20} />
                 </div>
                 <div className="min-w-0">
@@ -213,7 +200,7 @@ export default function DarbukaPage() {
               </div>
 
               <div className="flex min-w-0 items-start gap-3">
-                <div className="shrink-0 rounded-full bg-black/5 p-2" aria-hidden="true">
+                <div className="shrink-0 rounded-full bg-neutral-100 p-2" aria-hidden="true">
                   <MapPin size={20} />
                 </div>
                 <div className="min-w-0">
@@ -242,7 +229,7 @@ export default function DarbukaPage() {
 
             <Link
               href="/contact"
-              className="w-full rounded-2xl border px-6 py-3 text-center font-semibold opacity-80 transition hover:opacity-100 sm:w-auto"
+              className="w-full rounded-2xl border border-neutral-300 bg-white px-6 py-3 text-center font-semibold transition hover:bg-neutral-50 sm:w-auto"
             >
               Preguntar disponibilidad
             </Link>
@@ -259,7 +246,7 @@ export default function DarbukaPage() {
         {/* VISUAL GALLERY */}
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 md:mt-10 md:grid-cols-3">
 
-          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border">
+          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border border-neutral-300">
             <Image
               src="/darbuka/1.png"
               alt="Darbuka rhythm notation"
@@ -269,7 +256,7 @@ export default function DarbukaPage() {
             />
           </div>
 
-          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border">
+          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border border-neutral-300">
             <video
               src="/darbuka/clip.mp4"
               className="h-full w-full object-cover"
@@ -280,7 +267,7 @@ export default function DarbukaPage() {
             />
           </div>
 
-          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border">
+          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border border-neutral-300">
             <Image
               src="/darbuka/3.jpg"
               alt="Darbuka workshop in Tarifa"
