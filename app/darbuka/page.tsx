@@ -44,22 +44,22 @@ export default function DarbukaPage() {
       <div className="mx-auto w-full max-w-4xl min-w-0">
 
         {/* HERO */}
-        <p className="text-xs uppercase tracking-widest text-neutral-600 sm:text-sm">
+          <p className="text-sm uppercase tracking-widest opacity-60">
           Darbuka · Barcelona
-        </p>
+          </p>
 
-        <h1 className="mt-4 text-3xl font-bold leading-tight text-neutral-900 sm:text-5xl">
-          Darbuka classes & rhythm workshops
-        </h1>
+          <h1 className="mt-4 text-5xl font-bold leading-tight">
+            Darbuka classes & rhythm workshops
+          </h1>
 
-        <p className="mt-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
-          Private lessons and group workshops inspired by Maghreb rhythms.
-          Technique, groove and musicality — simple, practical and fun.
-        </p>
+          <p className="mt-3 text-sm opacity-70">
+  Private lessons and group workshops inspired by Maghreb rhythms.
+  Technique, groove and musicality — simple, practical and fun.
+          </p>
 
-        <p className="mt-3 text-sm leading-relaxed text-neutral-600">
-          Beginner-friendly. Darbuka classes in Barcelona — también opción online.
-        </p>
+<p className="mt-4 text-lg opacity-80">
+  Beginner-friendly. Darbuka classes in Barcelona — también opción online.
+</p>
 
         {/* STRUCTURE + PRICING */}
         <section className="mt-8 rounded-2xl border border-neutral-300 bg-white/95 p-4 shadow-md backdrop-blur sm:mt-10 sm:p-6">
