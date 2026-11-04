@@ -1,13 +1,12 @@
-
 import Link from "next/link";
 import Image from "next/image";
 import { Backpack, Globe, MapPin, Music2 } from "lucide-react";
 
 export default function DarbukaPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden px-4 py-10 sm:px-6 sm:py-16">
+    <main className="relative min-h-screen isolate overflow-hidden px-4 py-10 sm:px-6 sm:py-16">
 
-      {/* SOFT BACKGROUND: ORIGINAL ORANGE + BLUE GRADIENT */}
+      {/* ORIGINAL SOFT BACKGROUND */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div
           className="absolute -top-32 left-1/2 h-[420px] w-[820px] max-w-full -translate-x-1/2 rounded-full blur-3xl opacity-30"
@@ -45,20 +44,20 @@ export default function DarbukaPage() {
       <div className="mx-auto w-full max-w-4xl min-w-0">
 
         {/* HERO */}
-        <p className="text-xs font-semibold uppercase tracking-widest text-neutral-600 sm:text-sm">
+        <p className="text-xs uppercase tracking-widest text-neutral-600 sm:text-sm">
           Darbuka · Barcelona
         </p>
 
-        <h1 className="mt-4 text-3xl font-extrabold leading-tight text-neutral-900 sm:text-5xl">
+        <h1 className="mt-4 text-3xl font-bold leading-tight text-neutral-900 sm:text-5xl">
           Darbuka classes & rhythm workshops
         </h1>
 
-        <p className="mt-4 text-base font-medium leading-relaxed text-neutral-700 sm:text-lg">
+        <p className="mt-4 text-base leading-relaxed text-neutral-700 sm:text-lg">
           Private lessons and group workshops inspired by Maghreb rhythms.
           Technique, groove and musicality — simple, practical and fun.
         </p>
 
-        <p className="mt-3 text-sm font-medium leading-relaxed text-neutral-600">
+        <p className="mt-3 text-sm leading-relaxed text-neutral-600">
           Beginner-friendly. Darbuka classes in Barcelona — también opción online.
         </p>
 
@@ -87,9 +86,7 @@ export default function DarbukaPage() {
           <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-3">
 
             <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 shadow-sm sm:p-5">
-              <p className="font-bold text-neutral-900">
-                Nivel 1 · Beginner
-              </p>
+              <p className="font-bold text-neutral-900">Nivel 1 · Beginner</p>
               <ul className="mt-3 space-y-2 text-sm font-medium leading-relaxed text-neutral-700 sm:text-base">
                 <li>• Sonido (dum/tek/ka) + postura</li>
                 <li>• Patrones básicos y tempo</li>
@@ -98,9 +95,7 @@ export default function DarbukaPage() {
             </div>
 
             <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 shadow-sm sm:p-5">
-              <p className="font-bold text-neutral-900">
-                Nivel 2 · Intermedio
-              </p>
+              <p className="font-bold text-neutral-900">Nivel 2 · Intermedio</p>
               <ul className="mt-3 space-y-2 text-sm font-medium leading-relaxed text-neutral-700 sm:text-base">
                 <li>• Variaciones + fills</li>
                 <li>• Acentos e independencia</li>
@@ -109,9 +104,7 @@ export default function DarbukaPage() {
             </div>
 
             <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 shadow-sm sm:p-5">
-              <p className="font-bold text-neutral-900">
-                Nivel 3 · Avanzado
-              </p>
+              <p className="font-bold text-neutral-900">Nivel 3 · Avanzado</p>
               <ul className="mt-3 space-y-2 text-sm font-medium leading-relaxed text-neutral-700 sm:text-base">
                 <li>• Velocidad + control</li>
                 <li>• Repertorio + improvisación</li>
@@ -129,36 +122,24 @@ export default function DarbukaPage() {
           <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-3">
 
             <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 shadow-sm sm:p-5">
-              <p className="font-bold text-neutral-900">
-                Clases privadas
-              </p>
-              <p className="mt-2 font-medium text-neutral-700">
-                60 min · 1 persona
-              </p>
+              <p className="font-bold text-neutral-900">Clases privadas</p>
+              <p className="mt-2 font-medium text-neutral-700">60 min · 1 persona</p>
               <p className="mt-2 text-neutral-800">
                 Desde <span className="font-extrabold">35–50€</span>
               </p>
             </div>
 
             <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 shadow-sm sm:p-5">
-              <p className="font-bold text-neutral-900">
-                Pack (recomendado)
-              </p>
-              <p className="mt-2 font-medium text-neutral-700">
-                4×60 min
-              </p>
+              <p className="font-bold text-neutral-900">Pack (recomendado)</p>
+              <p className="mt-2 font-medium text-neutral-700">4×60 min</p>
               <p className="mt-2 text-neutral-800">
                 Desde <span className="font-extrabold">120–180€</span>
               </p>
             </div>
 
             <div className="min-w-0 rounded-2xl border border-neutral-300 bg-white p-4 shadow-sm sm:p-5">
-              <p className="font-bold text-neutral-900">
-                Workshops grupo
-              </p>
-              <p className="mt-2 font-medium text-neutral-700">
-                2–3h · 4–12 personas
-              </p>
+              <p className="font-bold text-neutral-900">Workshops grupo</p>
+              <p className="mt-2 font-medium text-neutral-700">2–3h · 4–12 personas</p>
               <p className="mt-2 text-neutral-800">
                 Desde <span className="font-extrabold">150–350€</span>
               </p>
@@ -256,23 +237,24 @@ export default function DarbukaPage() {
 
         </section>
 
-        {/* VISUAL GALLERY */}
+        {/* VISUAL GALLERY - ORIGINAL IMAGE PROPORTIONS */}
         <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2 md:mt-10 md:grid-cols-3">
 
-          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border border-neutral-300 shadow-sm">
+          <div className="min-w-0 overflow-hidden rounded-2xl border border-neutral-300 shadow-sm">
             <Image
               src="/darbuka/1.png"
               alt="Darbuka rhythm notation"
               width={800}
               height={800}
-              className="h-full w-full object-cover"
+              className="block h-auto w-full object-contain"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
             />
           </div>
 
-          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border border-neutral-300 shadow-sm">
+          <div className="min-w-0 overflow-hidden rounded-2xl border border-neutral-300 shadow-sm">
             <video
               src="/darbuka/clip.mp4"
-              className="h-full w-full object-cover"
+              className="block h-auto w-full"
               controls
               playsInline
               preload="metadata"
@@ -280,13 +262,14 @@ export default function DarbukaPage() {
             />
           </div>
 
-          <div className="aspect-square min-w-0 overflow-hidden rounded-2xl border border-neutral-300 shadow-sm">
+          <div className="min-w-0 overflow-hidden rounded-2xl border border-neutral-300 shadow-sm">
             <Image
               src="/darbuka/3.jpg"
               alt="Darbuka workshop in Tarifa"
               width={800}
               height={800}
-              className="h-full w-full object-cover"
+              className="block h-auto w-full object-contain"
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
             />
           </div>
 
@@ -294,7 +277,10 @@ export default function DarbukaPage() {
 
         {/* BACK HOME */}
         <div className="mt-6">
-          <Link href="/" className="text-sm font-semibold text-neutral-700 underline">
+          <Link
+            href="/"
+            className="text-sm font-semibold text-neutral-700 underline"
+          >
             ← Back to Homes
           </Link>
         </div>
@@ -303,4 +289,3 @@ export default function DarbukaPage() {
     </main>
   );
 }
-
