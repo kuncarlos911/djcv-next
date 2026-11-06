@@ -233,7 +233,9 @@ export default function BookPage() {
             </h3>
 
             <p className="mt-3 text-sm opacity-70">
-              Reserve your ebook on Amazon and get ready to start the journey.
+               Reserve your ebook on Amazon and get ready to start the journey.
+               Read it on any Kindle device, or use the free Kindle app on your
+               smartphone or tablet. No Kindle device required.
             </p>
 
             <a
