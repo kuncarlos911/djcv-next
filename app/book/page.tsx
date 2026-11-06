@@ -30,31 +30,10 @@ export default function BookPage() {
             height="180"
             patternUnits="userSpaceOnUse"
           >
-            {/* Vinyl grooves */}
-            <circle
-              cx="45"
-              cy="45"
-              r="25"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.5"
-            />
-            <circle
-              cx="45"
-              cy="45"
-              r="18"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1"
-            />
-            <circle
-              cx="45"
-              cy="45"
-              r="5"
-              fill="currentColor"
-            />
+            <circle cx="45" cy="45" r="25" fill="none" stroke="currentColor" strokeWidth="1.5" />
+            <circle cx="45" cy="45" r="18" fill="none" stroke="currentColor" strokeWidth="1" />
+            <circle cx="45" cy="45" r="5" fill="currentColor" />
 
-            {/* Sound waves */}
             <path
               d="M90 45 C110 20, 130 20, 150 45 S170 70, 190 45"
               fill="none"
@@ -69,7 +48,6 @@ export default function BookPage() {
               strokeWidth="2"
             />
 
-            {/* Musical notes */}
             <path
               d="M130 100 V125 Q130 135 120 132 Q110 129 118 122 Q122 118 130 121"
               fill="none"
@@ -214,18 +192,57 @@ export default function BookPage() {
         </section>
 
         {/* GET THE BOOK */}
-        <section className="mt-20 rounded-2xl border bg-white/40 p-8 text-center backdrop-blur">
-          <h2 className="text-3xl font-bold">
-            Get the book
+        <section className="mt-20 rounded-2xl border bg-white/50 p-8 text-center backdrop-blur">
+          <p className="text-sm uppercase tracking-widest opacity-60">
+            The book
+          </p>
+
+          <h2 className="mt-4 text-3xl font-bold">
+            Get your copy
           </h2>
 
-          <p className="mt-4 opacity-70">
-            Available soon in Paperback and Kindle editions.
+          <p className="mt-4 opacity-75">
+            The journey is ready to be shared. Choose your edition.
           </p>
 
-          <p className="mt-6 text-sm uppercase tracking-widest opacity-50">
-            Coming soon on Amazon
-          </p>
+          {/* KINDLE EDITION */}
+          <div className="mt-8 rounded-2xl border bg-white/70 p-6">
+            <p className="text-sm uppercase tracking-widest opacity-60">
+              Kindle edition
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Available for pre-order
+            </h3>
+
+            <p className="mt-3 text-sm opacity-70">
+              Reserve your ebook on Amazon and get ready to start the journey.
+            </p>
+
+            <a
+              href="https://www.amazon.es/dp/B0HQGG8TCG/ref=tmm_kin_swatch_0?_encoding=UTF8&th=1"
+              target="_blank"
+              rel="noreferrer"
+              className="mt-6 inline-block rounded-2xl bg-black px-7 py-3 font-semibold text-white transition hover:opacity-90"
+            >
+              Pre-order the ebook on Amazon →
+            </a>
+          </div>
+
+          {/* PAPERBACK EDITION */}
+          <div className="mt-5 rounded-2xl border bg-white/70 p-6">
+            <p className="text-sm uppercase tracking-widest opacity-60">
+              Paperback edition
+            </p>
+
+            <h3 className="mt-3 text-2xl font-bold">
+              Coming December 1, 2026
+            </h3>
+
+            <p className="mt-3 text-sm opacity-70">
+              The printed edition will be available on December 1.
+            </p>
+          </div>
         </section>
 
         {/* BACK HOME */}
