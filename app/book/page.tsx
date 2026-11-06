@@ -108,6 +108,23 @@ export default function BookPage() {
               journey through the music, people and experiences
               that made Willy Homes.
             </p>
+
+          {/* BOOK LANGUAGE */}
+          <div className="mt-8 rounded-2xl border bg-white/50 p-5 backdrop-blur">
+            <p className="text-sm uppercase tracking-widest opacity-60">
+              Book language
+            </p>
+
+            <p className="mt-3 font-semibold">
+              The current edition is in Spanish.
+            </p>
+
+            <p className="mt-2 text-sm leading-relaxed opacity-75">
+              Dutch and English translations are currently in progress.
+              More news about these editions coming soon.
+            </p>
+          </div>
+
           </div>
         </div>
 
